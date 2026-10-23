@@ -14,7 +14,9 @@ export function ContactSection() {
           <Image src={assets.contact} alt={t.contactPhotoAlt} fill sizes="(max-width: 800px) 100vw, 50vw" />
         </div>
         <div className="contact-copy">
-          <p className="eyebrow">{t.contactLabel}</p><h2>{t.contactTitle}</h2><p className="contact-lead">{t.contactBody}</p>
+          <div className="contact-heading">
+            <p className="eyebrow">{t.contactLabel}</p><h2>{t.contactTitle}</h2><p className="contact-lead">{t.contactBody}</p>
+          </div>
           <dl>
             <div><MapPin className="contact-field-icon" size={20} aria-hidden="true" /><dt>{t.address}</dt><dd>
               <a className="contact-link" href={restaurant.directionsUrl} target="_blank" rel="noreferrer">

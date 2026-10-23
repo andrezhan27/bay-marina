@@ -2,7 +2,7 @@ export type Language = 'pt' | 'en';
 const pt = {
   contactPhotoAlt: 'Pormenor da mesa com o menu e logótipo Bay Marina', fiveStars: 'Cinco estrelas',
   privacyPolicy: 'Política de Privacidade', termsAndConditions: 'Termos e Condições', legalUnavailable: 'Disponível em breve',
-  home: 'Início', designedBy: 'Designed by',
+  home: 'Início', poweredBy: 'Powered by',
   nav: ['O Espaço', 'Sabores', 'Avaliações', 'Contactos'], book: 'Reservar mesa', menu: 'Ver menu',
   skip: 'Saltar para o conteúdo', openMenu: 'Abrir navegação', closeMenu: 'Fechar navegação', language: 'Idioma',
   eyebrow: 'SUSHI À LA CARTE · SETÚBAL', hero: 'À mesa, o tempo ganha outro sabor.', scroll: 'Descubra o Bay Marina',
@@ -10,7 +10,7 @@ const pt = {
   foodLabel: '02 — À SUA MESA', foodTitle: 'Uma mesa cheia de possibilidades.', foodBody: 'Sushi preparado ao seu pedido. Descubra o prazer de escolher, partilhar e repetir, ao seu ritmo, no nosso buffet à la carte.',
   photoPlaceholder: 'Fotografia do menu', coming: 'Em breve', photoNote: 'Preparado ao momento. Saboreado ao seu ritmo.', pause: 'Pausar movimento', resume: 'Retomar movimento', menuMissing: 'O menu estará disponível em breve.',
   reviewLabel: '03 — À CONVERSA', reviewTitle: 'Quem nos visita, conta melhor.', reviewNote: 'Em breve, as palavras de quem se sentou à nossa mesa.', reviewPlaceholder: 'Espaço para avaliação', reviewBody: 'Avaliação autêntica a adicionar.',
-  contactLabel: '04 — ENCONTRE-NOS', contactTitle: 'Esperamos por si.', contactBody: 'Em Setúbal, uma mesa para abrandar e saborear.', address: 'Morada', hours: 'Horário', phone: 'Reservas e contactos', pending: 'Informação a confirmar', email: 'Email',
+  contactLabel: '04 — ENCONTRE-NOS', contactTitle: 'Esperamos por si.', contactBody: 'Em Setúbal, uma mesa para abrandar e saborear.', address: 'Morada', hours: 'Horário', phone: 'Contacto', pending: 'Informação a confirmar', email: 'Email',
   reserveTitle: 'A sua próxima mesa está aqui.', reserveBody: 'Reserve a sua visita ao Bay Marina.', reserveNote: 'Reservas online em breve. Consulte os contactos.', mapPending: 'A nossa localização, em breve.', mapNote: 'Mapa disponível após confirmação da morada.', directions: 'Obter direções', mapTitle: 'Localização do Bay Marina',
   everyDay: 'Todos os dias', delivery: 'Delivery', deliveryLink: 'Pedir pela Glovo', bookingTitle: 'Reservas Bay Marina',
   pricingTitle: 'Buffet à la carte', weekdayLunch: 'Almoço · Segunda a sexta-feira', otherService: 'Jantar todos os dias · Almoço aos fins de semana e feriados', adult: 'Adulto', child: 'Crianças dos 4 aos 9 anos', perPerson: 'por pessoa', priceNote: 'IVA incluído. Bebidas e café não incluídos.',
@@ -20,7 +20,7 @@ export type Copy = typeof pt;
 const en: Copy = {
   contactPhotoAlt: 'Table detail with the Bay Marina menu and logo', fiveStars: 'Five stars',
   privacyPolicy: 'Privacy Policy', termsAndConditions: 'Terms and Conditions', legalUnavailable: 'Available soon',
-  home: 'Home', designedBy: 'Designed by',
+  home: 'Home', poweredBy: 'Powered by',
   nav: ['The Space', 'Food', 'Reviews', 'Contact'], book: 'Book a table', menu: 'View menu',
   skip: 'Skip to content', openMenu: 'Open navigation', closeMenu: 'Close navigation', language: 'Language',
   eyebrow: 'À LA CARTE SUSHI · SETÚBAL', hero: 'Take your time. Savour every moment.', scroll: 'Discover Bay Marina',

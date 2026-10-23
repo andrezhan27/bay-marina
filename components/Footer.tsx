@@ -20,7 +20,7 @@ export function Footer({ legalLinks }: { legalLinks: LegalLinks }) {
       <nav aria-label={t.openMenu}>{t.nav.map((label, i) => <a key={label} href={`#${sectionIds[i]}`}>{label}</a>)}{restaurant.socialLinks.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}</nav>
     </div>
     <div className="footer-bottom">
-      <span>© 2026 Bay Marina, {t.designedBy} <a href="https://www.intelis.pt" target="_blank" rel="noreferrer">Intelis</a>, {t.rights}</span>
+      <span>© 2026 Bay Marina, {t.poweredBy} <a href="https://www.intelis.pt" target="_blank" rel="noreferrer">Intelis</a>, {t.rights}</span>
       <div className="footer-legal">{policies.map(policy => policy.url ? (
         <a href={policy.url} key={policy.label} target="_blank" rel="noreferrer">{policy.label}</a>
       ) : <span className="legal-pending" key={policy.label} title={t.legalUnavailable}>{policy.label}<small>{t.legalUnavailable}</small></span>)}</div>
