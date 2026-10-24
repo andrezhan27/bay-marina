@@ -47,6 +47,8 @@ Latest verification: all image sources are WebP with no broken images. Desktop H
 4. Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` from your local `.env.local` to the intended Vercel Preview and Production environments before building. `.env.example` lists the names; `.env.local` stays ignored.
 5. Deploy. The `/` homepage supports five-minute revalidation of legal links, and `/reservation` is included as a normal Next.js route. No custom Vercel routing configuration is needed.
 
+Vercel Web Analytics is included in the root layout through `@vercel/analytics/next`, covering all routes. Enable **Web Analytics** for the project in the Vercel dashboard and deploy to start collecting page views. Development mode does not collect analytics. See the [Vercel Web Analytics setup guide](https://vercel.com/docs/analytics/quickstart).
+
 Content activation still depends on the external services: populate the two legal URLs in Supabase, and activate/correct the Intelis booking widget if its supplied URL still returns “Reservation widget not found.” These are independent of build/deployment readiness. No deployment has been performed by this task.
 
 The gallery now has 4px gaps at all breakpoints. Hamburger navigation uses 28px section links and a 13px booking CTA, retaining at least 44px link targets and a 48px button.
