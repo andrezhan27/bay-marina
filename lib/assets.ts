@@ -1,3 +1,15 @@
+import food1 from '@/public/images/food-1.webp';
+import food2 from '@/public/images/food-2.webp';
+import food3 from '@/public/images/food-3.webp';
+import food4 from '@/public/images/food-4.webp';
+import food5 from '@/public/images/food-5.webp';
+import food6 from '@/public/images/food-6.webp';
+import food7 from '@/public/images/food-7.webp';
+import food8 from '@/public/images/food-8.webp';
+import food9 from '@/public/images/food-9.webp';
+import food10 from '@/public/images/food-10.webp';
+import food11 from '@/public/images/food-11.webp';
+import food12 from '@/public/images/food-12.webp';
 import space1 from '@/public/images/space-1.webp';
 import space2 from '@/public/images/space-2.webp';
 import space3 from '@/public/images/space-3.webp';
@@ -21,14 +33,19 @@ export const assets = {
     { id: 7, src: space7, alt: ['Mesa junto à janela com luz natural', 'Window-side table in natural light'] },
     { id: 8, src: space8, alt: ['Perspetiva das mesas e dos espelhos', 'Tables and mirrored interior'] },
   ],
+  // Keep filename order: food-1–6 on top, food-7–12 below.
   food: [
-    { id: 1, src: '/images/food-1.webp', alt: ['Apresentação de sushi e sashimi', 'Sushi and sashimi presentation'] },
-    { id: 2, src: '/images/food-2.webp', alt: ['Sashimi e pequenas entradas', 'Sashimi and small starters'] },
-    { id: 3, src: '/images/food-3.webp', alt: ['Seleção de rolos de sushi', 'Selection of sushi rolls'] },
-    { id: 4, src: '/images/food-4.webp', alt: ['Peixe laminado em prato de cerâmica', 'Sliced fish on a ceramic plate'] },
-    { id: 5, src: '/images/food-5.webp', alt: ['Apresentação de atum com molho', 'Tuna presentation with sauce'] },
-    { id: 6, src: '/images/food-6.webp', alt: ['Peças de sushi com cobertura vermelha', 'Sushi pieces with red topping'] },
-    { id: 7, src: '/images/food-7.webp', alt: ['Rolos de sushi com morangos', 'Sushi rolls with strawberries'] },
-    { id: 8, src: '/images/food-8.webp', alt: ['Camarões com limão', 'Prawns with lemon'] },
+    { id: 1, src: food1, alt: ['Apresentação de sushi e sashimi', 'Sushi and sashimi presentation'] },
+    { id: 2, src: food2, alt: ['Sashimi e pequenas entradas', 'Sashimi and small starters'] },
+    { id: 3, src: food3, alt: ['Prato quente servido num wok', 'Hot dish served in a wok'] },
+    { id: 4, src: food4, alt: ['Peixe laminado em prato de cerâmica', 'Sliced fish on a ceramic plate'] },
+    { id: 5, src: food5, alt: ['Apresentação de atum com molho', 'Tuna presentation with sauce'] },
+    { id: 6, src: food6, alt: ['Dumplings com molho e cebolinho', 'Dumplings with sauce and chives'] },
+    { id: 7, src: food7, alt: ['Fatias de carne com molho e ervas', 'Sliced meat with sauce and herbs'] },
+    { id: 8, src: food8, alt: ['Camarões com limão', 'Prawns with lemon'] },
+    { id: 9, src: food9, alt: ['Rolos de salmão com cobertura vermelha', 'Salmon rolls with red topping'] },
+    { id: 10, src: food10, alt: ['Massa salteada com camarão e legumes', 'Stir-fried noodles with prawns and vegetables'] },
+    { id: 11, src: food11, alt: ['Rolos de sushi com morangos e molho', 'Sushi rolls with strawberries and sauce'] },
+    { id: 12, src: food12, alt: ['Seleção de sushi com decoração roxa', 'Sushi selection with purple garnish'] },
   ],
 };

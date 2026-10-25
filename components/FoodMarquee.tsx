@@ -23,8 +23,8 @@ export function FoodMarquee() {
             <div className={`food-track track-${row}`}>
               {[0, 1].map(copy => (
                 <div className="food-sequence" key={copy} aria-hidden={copy === 1 ? true : undefined}>
-                  {assets.food.slice(row * 4, row * 4 + 4).map(photo => (
-                    <div className="food-tile" key={photo.id}>
+                  {assets.food.slice(row * 6, row * 6 + 6).map(photo => (
+                    <div className="food-tile" key={photo.id} data-food-id={photo.id}>
                       <Image src={photo.src} alt={copy === 1 ? '' : photo.alt[language === 'pt' ? 0 : 1]} fill sizes="(max-width: 600px) 245px, (max-width: 1280px) 320px, 25vw" />
                     </div>
                   ))}
@@ -35,7 +35,10 @@ export function FoodMarquee() {
         ))}
       </div>
       <BuffetPricing />
-      <div className="food-booking"><MagneticButton>{t.book}</MagneticButton></div>
+      <div className="food-booking">
+        <MagneticButton>{t.book}</MagneticButton>
+        <a className="button secondary" href="/menu/takeaway-menu.pdf">{t.takeawayMenu}</a>
+      </div>
     </section>
   );
 }
